@@ -5,10 +5,10 @@ dispatcher = updater.dispatcher
 
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Welcome to my Bot")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="/help_me for help")
 
 def help_me(update, context):
     help_message = """
-    /start -> Welcome to channel
     /help_me  -> Ask for help
     /content -> View content
     /python -> A python playlist
